@@ -1,13 +1,7 @@
 /*
  * @Author: zhaoliangcai@yiyetech.com
- * @Date: 2022-06-07 09:36:10
- * @LastEditors: zhaoliangcai@yiyetech.com
- * @LastEditTime: 2022-06-08 17:34:49
- * @FilePath: \工作3\vue-demo\src\hooks\useComponent.js
+ * @Date: 2022-06-09 17:06:18
  */
-
-
-
 
 // TODO 未完成
 // ? 子组件挂载到任意节点
@@ -16,11 +10,6 @@
 
 
 import Vue from 'vue'
-/**
- * @description: 
- * @param {*} component
- * @return {*}
- */
 function appendCompToRoot(component) {
     const el = document.createElement("div")
     // el.setAttribute('id', _id)
