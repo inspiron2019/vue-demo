@@ -1,14 +1,7 @@
 /*
  * @Author: zhaoliangcai@yiyetech.com
- * @Date: 2022-06-09 11:38:47
- * @LastEditors: zhaoliangcai@yiyetech.com
- * @LastEditTime: 2022-06-09 11:54:09
- * @FilePath: \工作3\vue-demo\src\hooks\class-extends.js
+ * @Date: 2022-06-09 17:06:18
  */
-// ! 原型和继承、原型链
-// ? 父类的静态属性和静态方法会被子类继承，但是不会被实例继承
-// ? extends super 是什么
-// ? static可以继承但是是被子类继承不是实例 public可以继承可以外部访问 protected可以继承不可以外部访问 private不可以继承不可以外部访问
 class Animal {
     static staticName = 'static name'
     constructor(name, age) {
@@ -39,3 +32,8 @@ Horse.staticMethod()
 console.log(Horse.staticName)
 
 export default Animal
+
+// ? 父类的静态属性和静态方法会被子类继承，但是不会被实例继承
+// ? extends super 是什么
+// ? static可以继承但是是被子类继承不是实例 
+// ? public可以继承可以外部访问 protected可以继承不可以外部访问 private不可以继承不可以外部访问

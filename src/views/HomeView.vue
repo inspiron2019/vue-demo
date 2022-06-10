@@ -10,8 +10,8 @@
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
 import VxeTable from '@/components/VxeTable.vue'
-import appendCompToRoot from '@/hooks/useComponent.js'
-import Animal from "@/hooks/class-extends.js";
+import appendCompToRoot from '@/hooks/use-component.js'
+import Animal from "@/hooks/class-extend.js";
 
 export default {
   name: 'HomeView',
