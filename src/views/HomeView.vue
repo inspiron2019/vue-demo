@@ -3,6 +3,7 @@
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <vxe-table></vxe-table> -->
+    <div v-resize:[arg]="val"></div>
   </div>
 </template>
 
@@ -18,6 +19,12 @@ export default {
   components: {
     HelloWorld,
     VxeTable
+  },
+  data() {
+    return {
+      arg: 'a',
+      val: '1'
+    }
   },
   mounted() {
     appendCompToRoot(VxeTable)
