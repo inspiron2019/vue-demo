@@ -6,7 +6,6 @@
  * @FilePath: \工作3\vue-demo\README.md
 -->
 # vue-demo
-# vue-demo
 
 ## Project setup
 ```
