@@ -1,5 +1,5 @@
 <template>
-  <div class="vxe-table-container">
+  <div class="vxe-table-container" v-if="false">
       <!-- 配置表单 -->
     <vxe-form 
         :data="formData4" 
