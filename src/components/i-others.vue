@@ -1,103 +1,43 @@
 <template>
   <div style="width: 60%;">
-    <el-container>
-      <el-header>Header</el-header>
-      <el-main>Main</el-main>
-    </el-container>
-
-    <el-container>
-      <el-header>Header</el-header>
-      <el-main>Main</el-main>
-      <el-footer>Footer</el-footer>
-    </el-container>
-
-    <el-container>
-      <el-aside width="200px">Aside</el-aside>
-      <el-main>Main</el-main>
-    </el-container>
-
-    <el-container>
-      <el-header>Header</el-header>
-      <el-container>
-        <el-aside width="200px">Aside</el-aside>
-        <el-main>Main</el-main>
-      </el-container>
-    </el-container>
-
-    <el-container>
-      <el-header>Header</el-header>
-      <el-container>
-        <el-aside width="200px">Aside</el-aside>
-        <el-container>
-          <el-main>Main</el-main>
-          <el-footer>Footer</el-footer>
-        </el-container>
-      </el-container>
-    </el-container>
-
-    <el-container>
-      <el-aside width="200px">Aside</el-aside>
-      <el-container>
-        <el-header>Header</el-header>
-        <el-main>Main</el-main>
-      </el-container>
-    </el-container>
-
-    <el-container>
-      <el-aside width="200px">Aside</el-aside>
-      <el-container>
-        <el-header>Header</el-header>
-        <el-main>Main</el-main>
-        <el-footer>Footer</el-footer>
-      </el-container>
-    </el-container>
+    <!-- 卡片 -->
+    <el-card class="box-card">
+      <div slot="header" class="clearfix">
+        <span>卡片名称</span>
+        <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+      </div>
+      <div v-for="o in 4" :key="o" class="text item">
+        {{'列表内容 ' + o }}
+      </div>
+    </el-card>
   </div>
 </template>
 
 <script>
 export default {
   data: () => ({
-    show: true,
+    
   }),
 };
 </script>
 
 <style>
-.el-header, .el-footer {
-    background-color: #B3C0D1;
-    color: #333;
-    text-align: center;
-    line-height: 60px;
+  /* 卡片 */
+  .text {
+    font-size: 14px;
   }
-  
-  .el-aside {
-    /* flex: 1; */
-    /* flex-shrink: 0 */
-    background-color: #D3DCE6;
-    color: #333;
-    text-align: center;
-    line-height: 200px;
+  .item {
+    margin-bottom: 18px;
   }
-  
-  .el-main {
-    background-color: #E9EEF3;
-    color: #333;
-    text-align: center;
-    line-height: 160px;
+  .clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: "";
   }
-  .el-container {
-      margin-bottom: 40px;
+  .clearfix:after {
+    clear: both
   }
-  /* body > .el-container {
-    margin-bottom: 40px;
+  .box-card {
+    width: 480px;
   }
-  
-  .el-container:nth-child(5) .el-aside,
-  .el-container:nth-child(6) .el-aside {
-    line-height: 260px;
-  }
-  
-  .el-container:nth-child(7) .el-aside {
-    line-height: 320px;
-  } */
 </style>
