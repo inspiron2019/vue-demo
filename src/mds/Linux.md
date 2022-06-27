@@ -1,22 +1,3 @@
-
-## 关于私有库依赖下载失败问题
-## 设置淘宝镜像
-npm config set registry https://registry.npm.taobao.org
-npm config set disturl https://npm.taobao.org/dist
-
-取消淘宝镜像
-npm config edit 
-
-OR
-npm config delete registry
-npm config delete disturl
-
-设置私有库
-npm config set registry xxx
-yarn config set registry xxx
-npm view @yiye/ad-selector 1.0.1 --registry= xxx
-npm install @yiye/ad-selector 1.0.1 --registry= xxx
-
 ## 关于NVM
 https://blog.csdn.net/QWERTYQ16/article/details/124497532
 

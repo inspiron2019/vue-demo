@@ -13,20 +13,20 @@
     <!-- 动画组件 -->
     <!-- <i-transition></i-transition> -->
     <!-- 布局组件 -->
-    <!-- <i-container></i-container> -->
+    <i-container></i-container>
     
     <!-- 项目基调 -->
-    <i-basic></i-basic>
+    <!-- <i-basic></i-basic> -->
     <!-- 表单组件 -->
-    <i-form></i-form>
+    <!-- <i-form></i-form> -->
     <!-- 展示组件 -->
-    <i-data></i-data>
+    <!-- <i-data></i-data> -->
     <!-- 信息提示 -->
-    <i-notice></i-notice>
+    <!-- <i-notice></i-notice> -->
     <!-- 导航 -->
-    <i-navigation></i-navigation>
+    <!-- <i-navigation></i-navigation> -->
     <!-- 交互插件 -->
-    <i-others></i-others>
+    <!-- <i-others></i-others> -->
   </div>
 </template>
 
