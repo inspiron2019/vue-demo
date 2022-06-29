@@ -13,25 +13,6 @@ https://blog.csdn.net/yiyelanxin/article/details/102399412
 https://www.jianshu.com/p/8983f6816a39
 
 
-## 代办
-
-gem install bundler
-gem install rails:5.1.2
-bundle install
-rails s -e=sz-saas
-
-
-
-sudo apt-get install ruby-full
-ruby -v
-gem -v
-sudo gem install bundler
-sudo gem install rails
-
-
-gem update --system
-gem install rails
-
 
 搜索文件 ctrl + p
 打开配置 ctrl + shift + p
@@ -40,7 +21,6 @@ gem install rails
 
 
 ## 复习
-
 axios学习TS 
 项目学习VUE3.0
 组件库封装组件

@@ -73,6 +73,22 @@ export default {
     for(let i = 0; i < 1000; i++) {
       this.lists.push(i)
     }
+  },
+  methods: {
+    handleBabel() {
+      // 关于?? ??= ?.
+      // 仅针对null undefined
+      let a = null
+      let b = 1
+      a ?? b
+      console.log('空合并：',a ?? b, a);
+      let c = undefined 
+      let d = 2
+      c ??= d
+      console.log('空赋值：', c);
+      let e = undefined
+      console.log(e?.length);
+    }
   }
 }
 </script>
